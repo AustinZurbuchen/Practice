@@ -5,11 +5,12 @@ public class Multiple3And5 {
 	public static int upperBound;
 	public static int result;
 	public static void main(String[] args){
-		Scanner scanner = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		System.out.println("Enter an upper bound: ");
-		upperBound = scanner.nextInt();
+		upperBound = in.nextInt();
 		result = getSum();
 		System.out.println(result);
+		in.close();
 	}
 	
 	public static int getSum(){
